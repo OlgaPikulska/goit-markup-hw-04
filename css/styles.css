@@ -1,0 +1,470 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  color: #212121;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header-position {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px none;
+  justify-content: space-around;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.menu {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px none;
+  justify-content: space-around;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.logo-place-header {
+  padding-left: 15px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-right: 93px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-decoration: none;
+}
+
+.logo-header {
+  color: black;
+}
+
+.logo-footer {
+  color: white;
+}
+.logo-place-footer {
+  padding-top: 60px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+.first-word {
+  color: #2196f3;
+}
+
+.nav {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-decoration: none;
+  color: #212121;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav:hover,
+.nav:focus {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.first {
+  padding-right: 46px;
+}
+
+.second {
+  padding-right: 46px;
+}
+
+.third {
+  padding-right: 371px;
+}
+
+.contact {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-decoration: none;
+  color: #757575;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contact:hover,
+.contact:focus {
+  color: #2196f3;
+  text-decoration: none;
+}
+.mail {
+  padding-right: 50px;
+}
+.tel {
+  padding-right: 27px;
+}
+
+/* MAIN */
+
+.title-background {
+  background-color: #2f303a;
+  /* background-image: url(D:\goit-markup-hw-04\images\background_pic.jpg);
+  background-size: contain;
+  background-position: center; */
+  box-sizing: border-box;
+  border: 1px none;
+  height: 600px;
+  /* nie wiem jak to zrobić, żeby tło wyświetlało się na całą szerokość */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.with-image {
+  background-image: url(D:\goit-markup-hw-04\images\background_pic.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-family: Roboto;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.37em;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  border: 1px none;
+  align-items: center;
+  /* padding: 200px 252px 30px 252px; */
+  width: 696px;
+  margin: 200px 252px 30px 252px;
+}
+
+.button {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88em;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #2196f3;
+  width: 200px;
+  height: 50px;
+  border: 1px none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.box-description {
+  /* border: 1px none; */
+  display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+  justify-content: flex-start;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.description {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0px;
+  gap: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.paragraf-title {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  text-align: left;
+  display: flex;
+  /* border: 1px none; */
+  justify-content: flex-start;
+  width: 270px;
+  padding-top: 94px;
+  padding-bottom: 10px;
+}
+
+.paragraf {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  /* line-height: 24px; */
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #757575;
+  display: flex;
+  /* border: 1px none; */
+  justify-content: flex-end;
+  width: 270px;
+  padding-bottom: 94px;
+}
+
+.box-picture {
+  display: flex;
+  flex-direction: column;
+}
+.picture-title {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17em;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 50px;
+  margin: 0px;
+}
+.picture {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+.team-background {
+  background-color: #f5f4fa;
+  border: 1px solid none;
+}
+
+.team {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 94px;
+  gap: 30px;
+}
+
+.team-box {
+  display: block;
+  border: 1px none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px #00000033;
+  box-shadow: 0px 1px 1px 0px #00000024;
+  box-shadow: 0px 1px 3px 0px #0000001f;
+  background-color: #ffffff;
+  width: 270px;
+  height: 368px;
+  justify-content: center;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  gap: 30px;
+}
+.team-title {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17em;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  margin: 0px;
+}
+
+.signature-name {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
+  text-align: center;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.signature-job {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.88em;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #757575;
+  display: block;
+  padding-bottom: 30px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #2f303a;
+}
+
+.footer-contact {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-decoration: none;
+  color: #ffffff60;
+  display: block;
+  /* nie wiem na jaki kolor ma zmieniać się kontakt po najechaniu kursorem C5 */
+  padding-left: 15px;
+  padding-bottom: 9px;
+}
+.footer-tel {
+  padding-bottom: 60px;
+}
+
+.address {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  text-align: left;
+  padding-left: 15px;
+  padding-bottom: 9px;
+}
+
+/* PORTFOLIO */
+
+.buttons-box {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+}
+
+.buttons {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63em;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f5f4fa;
+  border: 1px none;
+  border-radius: 4px;
+  height: 38px;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.buttons:hover,
+.buttons:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.image-signature {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+  text-align: left;
+  display: block;
+  border: 1px none;
+  margin: 0;
+  padding: 20px 24px 4px 24px;
+}
+
+.image-type {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.88em;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #757575;
+  display: block;
+  border: 1px none;
+  margin: 0;
+  padding: 0px 24px 20px 24px;
+}
+
+.pictures {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-bottom: 94px;
+  gap: 30px;
+}
+
+.pictures-box {
+  width: 370px;
+  height: 404px;
+  margin: 0px;
+}
+.border {
+  border-top: 0px none;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.no-gap {
+  display: block;
+}
