@@ -171,7 +171,7 @@ body {
 /* MAIN */
 
 .title-background {
-  background: #2f303a, #2f303a66;
+  background: #2f303a;
   /* background-color: #2f303a66; */
   /* nie wiem, jak dodać warstwę półprzezroczystą :( */
   background-image: url(/images/background_pic.jpg);
