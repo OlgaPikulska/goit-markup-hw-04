@@ -1,7 +1,7 @@
 body {
   background-color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #212121;
 }
 
@@ -29,7 +29,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   border: 1px none;
-  justify-content: space-around;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
@@ -114,7 +113,7 @@ body {
 }
 
 .third {
-  padding-right: 371px;
+  padding-right: 345px;
 }
 
 .contact {
@@ -140,32 +139,54 @@ body {
   text-decoration: none;
 }
 .mail {
-  padding-right: 50px;
+  padding-right: 30px;
 }
-.tel {
+.icon-header_mail_envelope {
+  fill: #757575;
+  stroke: #757575;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.icon-header_mail_envelope:hover,
+.icon-header_mail_envelope:focus {
+  fill: #2196f3;
+}
+
+/* .tel {
   padding-right: 27px;
+} */
+.icon-header_tel_smartphone {
+  fill: #757575;
+  stroke: #757575;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+.icon-header_tel_smartphone:hover,
+.icon-header_tel_smartphone:focus {
+  fill: #2196f3;
 }
 
 /* MAIN */
 
 .title-background {
-  background-color: #2f303a;
-  /* background-image: url(D:\goit-markup-hw-04\images\background_pic.jpg);
-  background-size: contain;
-  background-position: center; */
+  background: #2f303a;
+  background-color: #2f303a66;
+  /* nie wiem, jak dodać warstwę półprzezroczystą :( */
+  background-image: url(/images/background_pic.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   box-sizing: border-box;
   border: 1px none;
   height: 600px;
+  max-width: 1600px;
+  margin: 0 auto;
   /* nie wiem jak to zrobić, żeby tło wyświetlało się na całą szerokość */
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.with-image {
-  background-image: url(images/background_pic.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .title {
@@ -179,7 +200,6 @@ body {
   display: flex;
   border: 1px none;
   align-items: center;
-  /* padding: 200px 252px 30px 252px; */
   width: 696px;
   margin: 200px 252px 30px 252px;
 }
@@ -199,13 +219,52 @@ body {
   border: 1px none;
   border-radius: 4px;
   box-sizing: border-box;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+.description-icons {
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.icons {
+  border: 1px none;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-atuty1_antenna {
+  width: 70px;
+  height: 70px;
+}
+
+.icon-atuty2_clock {
+  width: 70px;
+  height: 70px;
+}
+
+.icon-atuty3_diagram {
+  width: 70px;
+  height: 70px;
+}
+
+.icon-atuty4_astronaut {
+  width: 70px;
+  height: 70px;
 }
 
 .box-description {
-  /* border: 1px none; */
   display: flex;
-  margin-left: 15px;
-  margin-right: 15px;
   justify-content: flex-start;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -216,10 +275,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 0px;
   gap: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 94px;
 }
 
 .paragraf-title {
@@ -233,7 +294,7 @@ body {
   /* border: 1px none; */
   justify-content: flex-start;
   width: 270px;
-  padding-top: 94px;
+  padding-top: 30px;
   padding-bottom: 10px;
 }
 
@@ -250,7 +311,7 @@ body {
   /* border: 1px none; */
   justify-content: flex-end;
   width: 270px;
-  padding-bottom: 94px;
+  /* padding-bottom: 94px; */
 }
 
 .box-picture {
@@ -298,12 +359,9 @@ body {
   display: block;
   border: 1px none;
   border-radius: 4px;
-  box-shadow: 0px 2px 1px 0px #00000033;
-  box-shadow: 0px 1px 1px 0px #00000024;
-  box-shadow: 0px 1px 3px 0px #0000001f;
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
   background-color: #ffffff;
   width: 270px;
-  height: 368px;
   justify-content: center;
   margin-top: 0px;
   margin-left: 0px;
@@ -343,15 +401,109 @@ body {
   text-align: center;
   color: #757575;
   display: block;
+  /* padding-bottom: 30px; */
+}
+.team-icons-position {
+  display: inline-flex;
+  gap: 10px;
+  padding-top: 16px;
+  padding-left: 32px;
   padding-bottom: 30px;
 }
 
+.team-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px none;
+  border-radius: 50%;
+  background: none;
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+}
+
+.team-icons:hover,
+.team-icons:focus {
+  background-color: #2196f3;
+  fill: white;
+}
+
+.clients-title {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17em;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  margin: 0px;
+}
+.clients-icons {
+  display: inline-flex;
+  gap: 30px;
+  padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.clients-icons-boxes {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-icons-boxes:focus,
+.clients-icons-boxes:hover {
+  border: 1px solid #2196f3;
+}
+.icons-logo {
+  fill: #afb1b8;
+}
+.icons-logo:focus,
+.icons-logo:hover {
+  fill: #2196f3;
+}
+.icon-Logo1 {
+  width: 106px;
+  height: 60.04px;
+}
+
+.icon-Logo2 {
+  width: 106px;
+  height: 60.04px;
+}
+
+.icon-Logo3 {
+  width: 106px;
+  height: 60px;
+}
+.icon-Logo4 {
+  width: 106px;
+  height: 60px;
+}
+.icon-Logo5 {
+  width: 106px;
+  height: 60px;
+}
+.icon-Logo6 {
+  width: 93.79px;
+  height: 43.96px;
+}
 /* FOOTER */
 
 footer {
   background-color: #2f303a;
 }
 
+.footer-position {
+  display: flex;
+  flex-direction: row;
+}
 .footer-contact {
   font-family: Roboto;
   font-size: 14px;
@@ -380,8 +532,58 @@ footer {
   text-align: left;
   padding-left: 15px;
   padding-bottom: 9px;
+  font-style: normal;
+}
+.footer-title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 72px;
+  padding-left: 70px;
+}
+.footer-icons-position {
+  display: inline-flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.footer-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  fill: white;
 }
 
+.footer-icons:hover,
+.footer-icons:focus {
+  background-color: #2196f3;
+}
+
+.icon-instagram {
+  width: 20px;
+  height: 20px;
+}
+.icon-twitter {
+  width: 20px;
+  height: 16.25px;
+}
+
+.icon-social-facebook {
+  width: 30px;
+  height: 30px;
+}
+
+.icon-linkedin {
+  width: 20px;
+  height: 20px;
+}
 /* PORTFOLIO */
 
 .buttons-box {
@@ -457,7 +659,13 @@ footer {
   width: 370px;
   height: 404px;
   margin: 0px;
+  box-shadow: none;
 }
+.pictures-box:hover,
+.pictures-box:focus {
+  box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
+}
+
 .border {
   border-top: 0px none;
   border-left: 1px solid #eeeeee;
