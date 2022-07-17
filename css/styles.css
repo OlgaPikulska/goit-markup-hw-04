@@ -1,7 +1,7 @@
 body {
   background-color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #212121;
 }
 
@@ -162,7 +162,7 @@ body {
   align-items: center;
 }
 .with-image {
-  background-image: url(D:\goit-markup-hw-04\images\background_pic.jpg);
+  background-image: url(images/background_pic.jpg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
