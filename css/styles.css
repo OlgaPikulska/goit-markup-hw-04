@@ -22,6 +22,10 @@ body {
   margin: 0 auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* HEADER */
 
 .header-position {
@@ -124,7 +128,6 @@ body {
   letter-spacing: 0.02em;
   text-align: left;
   text-decoration: none;
-  color: #757575;
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -132,49 +135,43 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
-.contact:hover,
-.contact:focus {
+.contact-hover {
+  color: #757575;
+  fill: #757575;
+}
+.contact-hover:hover {
   color: #2196f3;
+  fill: #2196f3;
   text-decoration: none;
 }
+
 .mail {
   padding-right: 30px;
 }
 .icon-header_mail_envelope {
-  fill: #757575;
   stroke: #757575;
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
-.icon-header_mail_envelope:hover,
-.icon-header_mail_envelope:focus {
-  fill: #2196f3;
-}
 
 /* .tel {
   padding-right: 27px;
 } */
+
 .icon-header_tel_smartphone {
-  fill: #757575;
   stroke: #757575;
   width: 10px;
   height: 16px;
   margin-right: 10px;
 }
-.icon-header_tel_smartphone:hover,
-.icon-header_tel_smartphone:focus {
-  fill: #2196f3;
-}
 
 /* MAIN */
 
 .title-background {
-  background: #2f303a;
-  /* background-color: #2f303a66; */
-  /* nie wiem, jak dodać warstwę półprzezroczystą :( */
-  background-image: url(/images/background_pic.jpg);
+  background-color: #2f303a;
+  background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+    url(../images/background_pic.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -183,12 +180,13 @@ body {
   height: 600px;
   max-width: 1600px;
   margin: 0 auto;
-  /* nie wiem jak to zrobić, żeby tło wyświetlało się na całą szerokość */
+}
+
+.title-position {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .title {
   font-family: Roboto;
   font-size: 44px;
@@ -197,11 +195,10 @@ body {
   letter-spacing: 0.06em;
   text-align: center;
   color: #ffffff;
-  display: flex;
+  padding-top: 200px;
+  padding-bottom: 30px;
   border: 1px none;
-  align-items: center;
   width: 696px;
-  margin: 200px 252px 30px 252px;
 }
 
 .button {
@@ -219,20 +216,13 @@ body {
   border: 1px none;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-left: 500px;
-  margin-right: 500px;
-}
-.description-icons {
-  list-style: none;
-  display: inline-flex;
-  justify-content: center;
-  gap: 30px;
-  padding-top: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* margin-left: 500px;
+  margin-right: 500px; */
 }
 
-.icons {
+/* KOLEJNA SEKCJA */
+
+.icons-background {
   border: 1px none;
   border-radius: 4px;
   width: 270px;
@@ -242,45 +232,17 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.icon-atuty1_antenna {
+.icon-size {
   width: 70px;
   height: 70px;
-}
-
-.icon-atuty2_clock {
-  width: 70px;
-  height: 70px;
-}
-
-.icon-atuty3_diagram {
-  width: 70px;
-  height: 70px;
-}
-
-.icon-atuty4_astronaut {
-  width: 70px;
-  height: 70px;
-}
-
-.box-description {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .description {
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 30px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 94px;
 }
 
 .paragraf-title {
@@ -291,7 +253,6 @@ body {
   letter-spacing: 0.03em;
   text-align: left;
   display: flex;
-  /* border: 1px none; */
   justify-content: flex-start;
   width: 270px;
   padding-top: 30px;
@@ -302,17 +263,16 @@ body {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
-  /* line-height: 24px; */
   line-height: 1.71em;
   letter-spacing: 0.03em;
   text-align: left;
   color: #757575;
   display: flex;
-  /* border: 1px none; */
   justify-content: flex-end;
   width: 270px;
-  /* padding-bottom: 94px; */
 }
+
+/* KOLEJNA SEKCJA */
 
 .box-picture {
   display: flex;
@@ -325,7 +285,6 @@ body {
   line-height: 1.17em;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-top: 0px;
   padding-bottom: 50px;
   margin: 0px;
 }
@@ -335,29 +294,34 @@ body {
   list-style: none;
   justify-content: center;
   gap: 30px;
-  padding-bottom: 94px;
 }
+
+/* KOLEJNA SEKCJA */
+
 .team-background {
   background-color: #f5f4fa;
-  border: 1px solid none;
+  /* border: 1px solid none; */
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .team {
   list-style: none;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 0px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 94px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  /* padding-bottom: 94px; */
   gap: 30px;
 }
 
 .team-box {
   display: block;
-  border: 1px none;
+  border: 0px none;
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
   background-color: #ffffff;
@@ -375,7 +339,7 @@ body {
   line-height: 1.17em;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-top: 94px;
+  /* padding-top: 94px; */
   padding-bottom: 50px;
   margin: 0px;
 }
@@ -422,6 +386,7 @@ body {
   width: 44px;
   height: 44px;
   fill: #afb1b8;
+  cursor: pointer;
 }
 
 .team-icons:hover,
@@ -430,6 +395,8 @@ body {
   fill: white;
 }
 
+/* KOLEJNA SEKCJA */
+
 .clients-title {
   font-family: Roboto;
   font-size: 36px;
@@ -437,16 +404,14 @@ body {
   line-height: 1.17em;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-top: 94px;
   padding-bottom: 50px;
   margin: 0px;
 }
 .clients-icons {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   gap: 30px;
-  padding-bottom: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .clients-icons-boxes {
   width: 170px;
@@ -456,6 +421,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .clients-icons-boxes:focus,
 .clients-icons-boxes:hover {
@@ -463,6 +429,7 @@ body {
 }
 .icons-logo {
   fill: #afb1b8;
+  cursor: pointer;
 }
 .icons-logo:focus,
 .icons-logo:hover {
@@ -559,6 +526,7 @@ footer {
   width: 44px;
   height: 44px;
   fill: white;
+  cursor: pointer;
 }
 
 .footer-icons:hover,
@@ -649,7 +617,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 0px;
   margin-bottom: 94px;
   gap: 30px;
@@ -660,6 +628,7 @@ footer {
   height: 404px;
   margin: 0px;
   box-shadow: none;
+  cursor: pointer;
 }
 .pictures-box:hover,
 .pictures-box:focus {
